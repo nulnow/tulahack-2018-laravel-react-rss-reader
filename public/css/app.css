@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #78002e;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.left-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 100%;
+  color: white;
+  background-color: #78002e;
+}
+
+.left-panel__logo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  background-color: #e35183;
+}
+
+.page-container {
+  width: 100%;
+  margin-left: 300px;
+  padding-top: 200px;
+  background-color: #ad1457;
+}
+
+.page {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 40px 40px 40px 80px;
+  color: #212121;
+  font-family: Araial, sans-serif;
+  line-height: 180%;
+  background-color: white;
+}
+
+.page > * {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  .left-panel {
+    display: none;
+  }
+
+  .page-container {
+    margin-left: 0;
+  }
+}
+
+.ButtonAdd {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #ff1744;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.ButtonAdd--active {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.ButtonAdd:hover {
+  cursor: pointer;
+}
+
+.ButtonAdd:focus {
+  outline: none;
+}
+
+.PanelAdd {
+  position: fixed;
+  bottom: -100px;
+  right: 40px;
+  padding: 20px;
+  border: 4px solid #212121;
+  background-color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.PanelAdd__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.PanelAdd__field,
+.PanelAdd__submit-button {
+  padding: 10px;
+  border: none;
+}
+
+.PanelAdd__field:focus,
+.PanelAdd__submit-button:focus {
+  outline: none;
+}
+
+.PanelAdd__field {
+  border-bottom: 1px solid #212121;
+}
+
+.PanelAdd__field:focus {
+  border-bottom: 1px solid #ff1744;
+}
+
+.PanelAdd__submit-button {
+  margin-left: 20px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.PanelAdd__submit-button:focus {
+  outline: 4px solid #ff1744;
+}
+
+.PanelAdd--active {
+  bottom: 100px;
+  right: 40px;
+}
+
