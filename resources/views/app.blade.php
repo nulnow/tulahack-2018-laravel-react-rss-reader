@@ -16,9 +16,8 @@
     <input type="submit" value="Выйти">
 </form>
 
-<div id="app">
+{{--<div id="app"></div>--}}
 
-</div>
-
+<script src="js/app.js"></script>
 </body>
 </html>
