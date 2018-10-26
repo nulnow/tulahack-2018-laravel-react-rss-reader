@@ -1,0 +1,131 @@
+@import "themes/default/vars";
+@import "components/navbar/navbar";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.line {
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+    width: 480px;
+    height: 5px;
+
+    background-color: $PrimaryColor;
+}
+
+.jambotron {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .slogan {
+        width: 850px;
+
+        margin: 20px;
+        //border: 1px solid red;
+    }
+
+    h1 {
+        color: $PrimaryColor;
+        font-size: 150px;
+        font-weight: 900;
+        margin-bottom: -40px;
+        margin-left: -10px;
+    }
+
+    h2 {
+        color: white;
+        font-size: 68px;
+
+        padding: 10px;
+
+        background-color: $PrimaryColor;
+    }
+
+    .iphone img {
+        width: 400px;
+    }
+}
+
+.what_is_rss {
+    position: relative;
+    
+    height: 900px;
+
+    background-color: #212121;
+    background: url("../img/2bg.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        width: 700px;
+        height: 400px;
+        padding: 40px;
+
+        background-color: white;
+
+        box-shadow: 5px 5px 60px 0 rgba(0,0,0, 0.8);
+
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        p{
+            margin-top: 20px;
+
+            font-size: 30px;
+            line-height: 150%;
+        }
+    }
+}
+
+.how_to_use {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 900px;
+
+    background-color: white;
+
+    h1 {
+        margin-bottom: 120px;
+
+        font-size: 70px;
+        font-weight: 100;
+    }
+
+    ul {
+        font-size: 40px;
+        line-height: 180%;
+
+        list-style: none;
+    }
+
+    span {
+        color: $PrimaryColor;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

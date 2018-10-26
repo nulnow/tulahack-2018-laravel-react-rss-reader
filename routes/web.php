@@ -5,8 +5,6 @@ use Illuminate\Http\Response;
 use App\Link;
 
 
-
-//Route::view('/', 'welcome');
 include_once 'Feed.php';
 
 function getUserLinks($modelUser) {

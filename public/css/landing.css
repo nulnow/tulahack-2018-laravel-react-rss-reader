@@ -1,0 +1,167 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  color: #f50057;
+  background-color: white;
+}
+
+.navbar__elem {
+  padding: 30px;
+  font-size: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.navbar__elem:hover {
+  cursor: pointer;
+}
+
+.navbar__elem:last-child {
+  margin-right: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.line {
+  position: absolute;
+  top: 110px;
+  right: 0;
+  width: 480px;
+  height: 5px;
+  background-color: #f50057;
+}
+
+.jambotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jambotron .slogan {
+  width: 850px;
+  margin: 20px;
+}
+
+.jambotron h1 {
+  color: #f50057;
+  font-size: 150px;
+  font-weight: 900;
+  margin-bottom: -40px;
+  margin-left: -10px;
+}
+
+.jambotron h2 {
+  color: white;
+  font-size: 68px;
+  padding: 10px;
+  background-color: #f50057;
+}
+
+.jambotron .iphone img {
+  width: 400px;
+}
+
+.what_is_rss {
+  position: relative;
+  height: 900px;
+  background-color: #212121;
+  background: url(/images/2bg.png?5fb9ee9e1fc140b494e3e3d711d3952c);
+  background-size: cover;
+}
+
+.what_is_rss .content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 700px;
+  height: 400px;
+  padding: 40px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 60px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 5px 5px 60px 0 rgba(0, 0, 0, 0.8);
+}
+
+.what_is_rss .content h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.what_is_rss .content p {
+  margin-top: 20px;
+  font-size: 30px;
+  line-height: 150%;
+}
+
+.how_to_use {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 900px;
+  background-color: white;
+}
+
+.how_to_use h1 {
+  margin-bottom: 120px;
+  font-size: 70px;
+  font-weight: 100;
+}
+
+.how_to_use ul {
+  font-size: 40px;
+  line-height: 180%;
+  list-style: none;
+}
+
+.how_to_use span {
+  color: #f50057;
+}
+
+.how_to_use span:hover {
+  cursor: pointer;
+}
+

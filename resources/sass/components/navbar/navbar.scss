@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    //height: 60px;
+    color: $PrimaryColor;
+    background-color: white;
+
+    &__elem {
+        padding: 30px;
+
+        font-size: 30px;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__elem:last-child {
+        margin-right: 50px;
+    }
+
+}
