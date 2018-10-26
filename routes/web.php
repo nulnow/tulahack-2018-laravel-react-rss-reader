@@ -30,6 +30,29 @@ function getNewsByLinkId($id) {
     return $elements;
 }
 
+function isValidRssLlink($link) {
+    try {
+        Feed::loadRss($link);
+    } catch (Exception $e) {
+        return false;
+    }
+    return true;
+}
+
+function userHasLink($user_id, $link_id) {
+    $linksIds = DB::select(
+        "SELECT * FROM users_links WHERE (user_id = ? and link_id = ?)",
+        [
+            $user_id,
+            $link_id
+        ]
+    );
+    if (count($linksIds) > 0) {
+        return true;
+    }
+    return false;
+}
+
 
 Route::get('/', function() {
     if (Auth::check()) {
@@ -105,8 +128,77 @@ Route::post('/tools', function (Request $request) {
 
             case "get_news_by_link_id":
                 $id = $data['link_id'];
-//                return $id;
                 return getNewsByLinkId($id);
+                break;
+
+            case "add_link":
+                $link = $data['link'];
+                $user_id = $user->id;
+
+                if (!isValidRssLlink($link)) {
+                    return ['status'=>'error'];
+                }
+
+                try {
+                    $isLinkExist = DB::select("select * from links where url = ?", [$link])[0];
+                } catch (Exception $e) {
+                    $isLinkExist = false;
+                }
+
+
+                if ($isLinkExist) {
+
+                    $isUserAlreadyHasTheLink = DB::select(
+                        "select * from users_links where (user_id = ? and link_id = ?)", [$user_id, $isLinkExist->id]
+                    )[0];
+
+                    if (!$isUserAlreadyHasTheLink) {
+                        DB::insert('insert into users_links (`user_id`, `link_id`) values (?, ?)', [$user_id, $isLinkExist->id]);
+                    }
+
+                    return ['status'=>'ok'];
+                } else {
+                    try {
+                        DB::insert('insert into links (`url`, `name`) values (?, ?)', [$link, 'Dayle']);
+                        $isLinkExist = DB::select("select * from links where url = ?", [$link])[0];
+                        DB::insert('insert into users_links (`user_id`, `link_id`) values (?, ?)', [$user_id, $isLinkExist->id]);
+                    } catch (Exception $e) {
+                        return ['status'=>'ok'];
+                    }
+                }
+
+                return ['status'=>'ok'];
+                break;
+
+            case "delete_link_by_id":
+                $id = $data['id'];
+                $linksIds = DB::select(
+                    "SELECT * FROM users_links WHERE (user_id = ? and link_id = ?)",
+                    [
+                        $modelUser->id,
+                        $id
+                    ]
+                );
+                if (count($linksIds) > 0) {
+                    DB::delete(
+                        "delete from users_links WHERE (user_id = ? and link_id = ?)",
+                        [
+                            $modelUser->id,
+                            $id
+                        ]
+                    );
+                }
+                return ['status'=>'ok'];
+                break;
+
+            case "get_news_by_user_link":
+                $link_id = $data['link_id'];
+
+                if (userHasLink($user->id, $link_id)) {
+                    return getNewsByLinkId($link_id);
+                }
+                return ['status'=>'error'];
+
                 break;
 
             case "get_user":
