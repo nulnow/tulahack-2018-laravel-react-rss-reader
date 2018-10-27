@@ -11,8 +11,8 @@
 <body>
 
 <div class="navbar">
-    <div class="navbar__elem">Login</div>
-    <div class="navbar__elem">Registration</div>
+    <a class="navbar__elem" href="/login">Login</a>
+    <a class="navbar__elem" href="/register">Registration</a>
 </div>
 <div class="line"></div>
 

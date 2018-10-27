@@ -1,12 +1,10 @@
-
-
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App'
-
-if (document.getElementById('app')) {
-    ReactDOM.render(<App />, document.getElementById('app'));
-}
+// import React, { Component } from 'react';
+// import ReactDOM from 'react-dom';
+// import App from './components/App'
+//
+// if (document.getElementById('app')) {
+//     ReactDOM.render(<App />, document.getElementById('app'));
+// }
 
 document.api = (data, callback) => {
     fetch('/tools', {
