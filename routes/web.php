@@ -23,6 +23,7 @@ function getNewsByLinkId($id) {
     $rss = Feed::loadRss(Link::findOrFail($id)->url);
     $elements = [];
     foreach ($rss->item as $item) {
+        $item->description = (string)$item->description;
         $elements[] = $item;
     }
     return $elements;

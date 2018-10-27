@@ -55,6 +55,11 @@ body {
   width: 3px;
 }
 
+.app::-webkit-scrollbar {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .app::-webkit-scrollbar-thumb {
   background-color: #c7c5cb;
   border-radius: 5px;
@@ -88,12 +93,21 @@ body {
   background-color: #E91E63;
   -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .app__plus-button > span {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   margin-bottom: -5px;
+}
+
+.app__plus-button--active > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.app__plus-button:focus {
+  outline: none;
 }
 
 .app__left-bar,
@@ -159,6 +173,44 @@ body {
   font-size: 20px;
 }
 
+.app .link_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+}
+
+.app .delete-link-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .delete-link-form button {
+  padding: 15px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.app .delete-link-form button:hover {
+  color: #E91E63;
+  cursor: pointer;
+}
+
 .app__links-container {
   width: 100%;
   overflow-y: scroll;
@@ -168,6 +220,11 @@ body {
   width: 5px;
 }
 
+.app__links-container::-webkit-scrollbar {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .app__links-container::-webkit-scrollbar-thumb {
   background-color: #c7c5cb;
   border-radius: 5px;
@@ -175,9 +232,10 @@ body {
 }
 
 .app__links-container .link {
-  width: 100%;
+  width: 90%;
   padding: 15px;
   letter-spacing: -0.03em;
+  overflow-x: hidden;
 }
 
 .app__links-container .link:hover {
@@ -187,8 +245,7 @@ body {
 
 .app__page-container {
   width: 70%;
-  padding: 5% 2%;
-  background-color: #eeeeee;
+  padding: 5% 10px;
   background-color: white;
   overflow-y: scroll;
 }
@@ -197,7 +254,32 @@ body {
   width: 5px;
 }
 
+.app__page-container::-webkit-scrollbar {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .app__page-container::-webkit-scrollbar-thumb {
+  background-color: #c7c5cb;
+  border-radius: 5px;
+  outline: 1px solid slategrey;
+}
+
+.app__page-container:hover {
+  padding: 5% 0;
+  padding-left: 15px;
+}
+
+.app__page-container:hover::-webkit-scrollbar {
+  width: 20px;
+}
+
+.app__page-container:hover::-webkit-scrollbar {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.app__page-container:hover::-webkit-scrollbar-thumb {
   background-color: #c7c5cb;
   border-radius: 5px;
   outline: 1px solid slategrey;
@@ -232,8 +314,84 @@ body {
   margin-bottom: 5px;
 }
 
+.app__page .article__body img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
 .app__page .article__url {
   color: rgba(0, 15, 255, 0.64);
+}
+
+.dashboard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  padding: 30px;
+  color: white;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: rgba(33, 33, 33, 0.95);
+  -webkit-box-shadow: 10px 10px 40px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 40px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow-y: scroll;
+  z-index: 100;
+}
+
+.dashboard::-webkit-scrollbar {
+  width: 5px;
+}
+
+.dashboard::-webkit-scrollbar {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.dashboard::-webkit-scrollbar-thumb {
+  background-color: #c7c5cb;
+  border-radius: 5px;
+  outline: 1px solid #E91E63;
+}
+
+.dashboard--hidden {
+  left: -50%;
+}
+
+.dashboard-form {
+  display: block;
+  padding: 10px 0;
+}
+
+.dashboard-input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.dashboard-input:focus,
+.dashboard-input:valid {
+  border-bottom: 1px solid #E91E63;
+  outline: 4px solid #E91E63;
+}
+
+.dashboard-button {
+  padding: 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: #212121;
+}
+
+.dashboard-button:focus {
+  border-bottom: 1px solid #E91E63;
+  outline: 4px solid #E91E63;
 }
 
 @media (max-width: 700px) {
