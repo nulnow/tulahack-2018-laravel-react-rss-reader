@@ -60,39 +60,22 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 15:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 16:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 3:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(4);
-__webpack_require__(15);
-module.exports = __webpack_require__(16);
+__webpack_require__(1);
+__webpack_require__(2);
+module.exports = __webpack_require__(3);
 
 
 /***/ }),
+/* 1 */
+/***/ (function(module, exports) {
 
-/***/ 4:
-/***/ (function(module, __webpack_exports__) {
-
-"use strict";
 // import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
 // import App from './components/App'
@@ -115,6 +98,17 @@ document.api = function (data, callback) {
     });
 };
 
-/***/ })
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
 
-/******/ });
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ })
+/******/ ]);

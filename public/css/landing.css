@@ -19,6 +19,8 @@
 
 .navbar__elem {
   padding: 30px;
+  color: #f50057;
+  text-decoration: none;
   font-size: 30px;
   -webkit-user-select: none;
   -moz-user-select: none;

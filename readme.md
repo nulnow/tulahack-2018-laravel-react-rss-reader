@@ -1,4 +1,3 @@
 
-## RSS reader (react + laravel)
-
-ololol
+# RSS reader (react + laravel)
+## Весь проект - это хотфикс, обычно я так не пишу, честно)))))
