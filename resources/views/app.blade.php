@@ -69,82 +69,11 @@
     <div class="app__page-container">
         <div class="app__page" id="page">
             <div class="article">
-                <div class="article__title">Прямая линия с ТМ. v3.0.</div>
-                <div class="article__date">12.12.2018</div>
+                <div class="article__title">RSS Reader</div>
+                <div class="article__date"></div>
                 <div class="article__body">
-                    Делимся с вами списком изменений
-                    по нашим проектам за месяц
-                    и в третий раз приглашаем к приятному
-                    и взаимовыгодному общению. Работаем по
-                    старой схеме — вы задаёте любые вопросы,
-                    а мы на них отвечаем:
+                    Стартовая страница. Для добавления лент нажмите на иконку настроке справа внизу.
                 </div>
-                <a class="article__url" href="#">www.sait-prikolov.ru</a>
-            </div>
-            <div class="article">
-                <div class="article__title">Прямая линия с ТМ. v3.0.</div>
-                <div class="article__date">12.12.2018</div>
-                <div class="article__body">
-                    Делимся с вами списком изменений
-                    по нашим проектам за месяц
-                    и в третий раз приглашаем к приятному
-                    и взаимовыгодному общению. Работаем по
-                    старой схеме — вы задаёте любые вопросы,
-                    а мы на них отвечаем:
-                </div>
-                <a class="article__url" href="#">www.sait-prikolov.ru</a>
-            </div>
-            <div class="article">
-                <div class="article__title">Прямая линия с ТМ. v3.0.</div>
-                <div class="article__date">12.12.2018</div>
-                <div class="article__body">
-                    Делимся с вами списком изменений
-                    по нашим проектам за месяц
-                    и в третий раз приглашаем к приятному
-                    и взаимовыгодному общению. Работаем по
-                    старой схеме — вы задаёте любые вопросы,
-                    а мы на них отвечаем:
-                </div>
-                <a class="article__url" href="#">www.sait-prikolov.ru</a>
-            </div>
-            <div class="article">
-                <div class="article__title">Прямая линия с ТМ. v3.0.</div>
-                <div class="article__date">12.12.2018</div>
-                <div class="article__body">
-                    Делимся с вами списком изменений
-                    по нашим проектам за месяц
-                    и в третий раз приглашаем к приятному
-                    и взаимовыгодному общению. Работаем по
-                    старой схеме — вы задаёте любые вопросы,
-                    а мы на них отвечаем:
-                </div>
-                <a class="article__url" href="#">www.sait-prikolov.ru</a>
-            </div>
-            <div class="article">
-                <div class="article__title">Прямая линия с ТМ. v3.0.</div>
-                <div class="article__date">12.12.2018</div>
-                <div class="article__body">
-                    Делимся с вами списком изменений
-                    по нашим проектам за месяц
-                    и в третий раз приглашаем к приятному
-                    и взаимовыгодному общению. Работаем по
-                    старой схеме — вы задаёте любые вопросы,
-                    а мы на них отвечаем:
-                </div>
-                <a class="article__url" href="#">www.sait-prikolov.ru</a>
-            </div>
-            <div class="article">
-                <div class="article__title">Прямая линия с ТМ. v3.0.</div>
-                <div class="article__date">12.12.2018</div>
-                <div class="article__body">
-                    Делимся с вами списком изменений
-                    по нашим проектам за месяц
-                    и в третий раз приглашаем к приятному
-                    и взаимовыгодному общению. Работаем по
-                    старой схеме — вы задаёте любые вопросы,
-                    а мы на них отвечаем:
-                </div>
-                <a class="article__url" href="#">www.sait-prikolov.ru</a>
             </div>
         </div>
     </div>

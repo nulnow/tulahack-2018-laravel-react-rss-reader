@@ -21,7 +21,7 @@ body {
           align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: url(/images/wp2.jpg?47dad42aed3ef5f7b10defb34f14d2c8);
+  background-image: url("https://i.imgur.com/2dxaFs9.jpg");
   background-size: cover;
   overflow-x: hidden;
 }

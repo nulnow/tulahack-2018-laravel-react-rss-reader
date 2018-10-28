@@ -1,0 +1,20 @@
+0000000000000000000000000000000000000000 9c83846c79785ee63c906961b897495fe5feb33a nulnow <andysikt@gmail.com> 1540396830 +0300	commit (initial): first commit
+9c83846c79785ee63c906961b897495fe5feb33a 94be2ff5c7f2dcd0ec989cfbd145199ad2ae8a65 nulnow <andysikt@gmail.com> 1540397323 +0300	commit: first commit
+94be2ff5c7f2dcd0ec989cfbd145199ad2ae8a65 b989a4a9104a0ec25c0660f35a7655f900236915 nulnow <andysikt@gmail.com> 1540419073 +0300	commit: changed readme md
+b989a4a9104a0ec25c0660f35a7655f900236915 ee1979e80a2b16298c85d19e0211c613a849da19 nulnow <andysikt@gmail.com> 1540550355 +0300	commit: Работает регистрация и роутинг
+ee1979e80a2b16298c85d19e0211c613a849da19 5cfbcf0e9bef9f712a72e67a384470a0b910bb51 nulnow <andysikt@gmail.com> 1540558355 +0300	commit: Работает регистрация, роутинг, можно получить новоси по id ленты, получить ленты пользователя
+5cfbcf0e9bef9f712a72e67a384470a0b910bb51 ab6a72534f592b3cb68d3e54dadf3fb36233b6a3 nulnow <andysikt@gmail.com> 1540564375 +0300	commit: Работает регистрация, роутинг
+ab6a72534f592b3cb68d3e54dadf3fb36233b6a3 1e6adbaaea7b4adce30bc8d983bce0623475a49e nulnow <andysikt@gmail.com> 1540569740 +0300	commit: Работает регистрация, роутинг
+1e6adbaaea7b4adce30bc8d983bce0623475a49e 855db9c40103ad150ce3dbbb2bf3d31498047e7e nulnow <andysikt@gmail.com> 1540641269 +0300	commit: Работает регистрация, роутинг
+855db9c40103ad150ce3dbbb2bf3d31498047e7e c901a67e75dbf236534245e9380ca20e047adb08 nulnow <andysikt@gmail.com> 1540644594 +0300	commit: Лендинг + прототип дизайна приложения
+c901a67e75dbf236534245e9380ca20e047adb08 2458cbd9cb96c9bcd482b76af55283b77b02d2d5 nulnow <andysikt@gmail.com> 1540660225 +0300	commit: Добавление, чтение лент, почти готово удаление
+2458cbd9cb96c9bcd482b76af55283b77b02d2d5 12cb8b5305bab611c12d5a0340ca99f4e3ce13d1 nulnow <andysikt@gmail.com> 1540676485 +0300	commit: Есть плохой лендинг, плохая регистрация и авторизация, есть красивый
+12cb8b5305bab611c12d5a0340ca99f4e3ce13d1 06580b448070f2447e269c2528a42d291b630564 nulnow <andysikt@gmail.com> 1540677202 +0300	commit: Добавил папку docs со скриншотами и psd лендинга (ручная работа)
+06580b448070f2447e269c2528a42d291b630564 bd5289a5ccf2e0253b214fa0f57d777c301fbfd4 nulnow <andysikt@gmail.com> 1540677249 +0300	commit: Добавил конечный вариант лендинга в папку docs
+bd5289a5ccf2e0253b214fa0f57d777c301fbfd4 8fb55b67662f79c588c4a929900186d3697af6fd nulnow <andysikt@gmail.com> 1540689284 +0300	commit: Добавлена страница с описанием в папку docs, изменен readme.md
+8fb55b67662f79c588c4a929900186d3697af6fd 78969b092351d5c9e81b24c858907f42fc598841 nulnow <andysikt@gmail.com> 1540689503 +0300	commit: Изменен readme.md
+78969b092351d5c9e81b24c858907f42fc598841 27fa706f593bba8faa3e232ba33616b0d1de63b4 nulnow <andysikt@gmail.com> 1540689757 +0300	commit: Добавлена ссылка на веб версию презентации
+27fa706f593bba8faa3e232ba33616b0d1de63b4 b0f91015b64ff312a7c9983a38a795eed1e656d7 nulnow <andysikt@gmail.com> 1540689923 +0300	commit: Не работают github pages, пробую починить
+b0f91015b64ff312a7c9983a38a795eed1e656d7 d11da24baa94cf3d4ff49f8d6231b24e13de2071 nulnow <andysikt@gmail.com> 1540689988 +0300	commit: Не работают github pages, пробую починить
+d11da24baa94cf3d4ff49f8d6231b24e13de2071 0ba75831c941faf34dbf1edc88e61e8a50ff166b nulnow <andysikt@gmail.com> 1540690241 +0300	commit: Не работают github pages, пробую починить
+0ba75831c941faf34dbf1edc88e61e8a50ff166b 4ac0e6d3cdd8153ce0405b7a04ef9d373659501a nulnow <andysikt@gmail.com> 1540715569 +0300	commit: Не работают github pages, пробую починить
